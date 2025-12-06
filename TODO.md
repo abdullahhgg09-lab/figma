@@ -9,3 +9,7 @@
 
 - [x] Adjust opacity of .right img to 0.5 in style.css
 - [x] Remove conflicting opacity from general img selector
+
+# TODO: Center Practice Advice on Mobile
+
+- [x] Add justify-content: center and align-items: center to .practice-cards in mobile media query

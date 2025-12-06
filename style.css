@@ -406,6 +406,8 @@ main{
   .practice-cards {
     flex-direction: column;
     gap: 15px;
+    justify-content: center;
+    align-items: center;
   }
   .p-card {
     width: 100%;
