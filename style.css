@@ -168,6 +168,8 @@ main{
 .practice {
   text-align: center;
   padding: 60px 0;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .practice h2 {
@@ -352,12 +354,115 @@ main{
         }
 
 /* Responsive Design */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+  .icons span {
+    font-size: 18px;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 20px 15px;
+    text-align: center;
+  }
+  .left h1 {
+    font-size: 28px;
+  }
+  .left p {
+    font-size: 14px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .right img {
+    width: 100%;
+    max-width: 250px;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  .practice {
+    padding: 40px 0;
+    width: 90%;
+  }
+  .practice h2 {
+    font-size: 24px;
+  }
+  .practice .subtitle {
+    font-size: 14px;
+  }
+  .practice-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .p-card {
+    width: 100%;
+    padding: 20px;
+  }
+  .section {
+    padding: 15px 10px;
+  }
+  .row {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .video {
+    margin: 10px;
+    padding: 10px;
+  }
+  .video video {
+    width: 200px;
+    height: 400px;
+  }
+  .row > div:last-child {
+    margin: 10px;
+    padding: 10px;
+  }
+  .cards {
+    justify-content: center;
+    text-align: center;
+  }
+  .card {
+    text-align: center;
+  }
+  .logos img {
+    width: 40px;
+  }
+  .newsletter {
+    padding: 10px;
+  }
+  input {
+    width: 100%;
+  }
+  .footer {
+    padding: 20px 15px;
+  }
+  .footer-columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
   }
   .nav-links {
-    display: none; /* Hide nav links on mobile; consider adding hamburger menu if needed */
+    flex-direction: column;
+    gap: 10px;
   }
   .hero {
     flex-direction: column;
@@ -388,6 +493,7 @@ main{
   .cards {
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
   }
   .card {
     width: 100%;
@@ -403,10 +509,13 @@ main{
     padding: 20px 10px;
   }
   .row {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
   }
-  .video img {
-    width: 100%;
+  .video video {
+    width: 150px;
+    height: 100px;
   }
   .logos img {
     width: 50px;
